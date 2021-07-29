@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/css/style.css" />
+    <title>Jordan Shoes - Codelândia</title>
+  </head>
+  <body>
+    <header class="container-post">
+      <div class="info">
+        <p>Ganhe R$ 10,00 de desconto no frete</p>
+      </div>
+      <div class="h-title">
+        <h1>Jordan Shoes</h1>
+      </div>
+    </header>
+    <main>
+      <section id="hero" class="date">
+        <div class="container">
+          <div id="typed-strings" class="title">
+            <h2>A melhor loja de Jordan</h2>
+            <p id="typed"></p>
+          </div>
+        </div>
+      </section>
+      <section id="detalhes" class="container title">
+        <h2 class="description">Destaques</h2>
+        <p class="description">
+          Frete grátis e chinelo de brinde é aqui, aproveite por tempo limitado.
+        </p>
+        <ul class="shoes description">
+          <li>
+            <img src="./img/1.png" alt="Jordan Shoe" />
+          </li>
+          <li>
+            <img src="./img/2.png" alt="Jordan Shoe" />
+          </li>
+          <li>
+            <img src="./img/3.png" alt="Jordan Shoe" />
+          </li>
+          <li>
+            <img src="./img/4.png" alt="Jordan Shoe" />
+          </li>
+          <li>
+            <img src="./img/5.png" alt="Jordan Shoe" />
+          </li>
+          <li>
+            <img src="./img/6.png" alt="Jordan Shoe" />
+          </li>
+          <li>
+            <img src="./img/7.png" alt="Jordan Shoe" />
+          </li>
+          <li>
+            <img src="./img/8.png" alt="Jordan Shoe" />
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var options = {
+        strings: [
+          "O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e o jogador Michael Jordan.",
+        ],
+        typeSpeed: 30,
+      };
+
+      var typed = new Typed("#typed", options);
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      const sr = ScrollReveal({
+        origin: "top",
+        distance: "50px",
+        duration: 2000,
+        reset: false,
+      });
+
+      ScrollReveal().reveal(".container-post", { delay: 200 });
+      ScrollReveal().reveal(".date", { delay: 400 });
+      ScrollReveal().reveal(".title", { delay: 500 });
+      ScrollReveal().reveal(".description", { delay: 600 });
+    </script>
+  </body>
+</html>

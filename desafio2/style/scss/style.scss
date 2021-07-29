@@ -1,0 +1,136 @@
+@import "./variaveis";
+
+body {
+  font-family: "Montserrat-Medium", sans-serif;
+  font-weight: 400;
+  background: $bgSite;
+  font-size: 1.8rem;
+  color: $black;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+header {
+  .info {
+    background: $black;
+    padding: 15px 20px;
+    p {
+      color: $bgSite;
+      text-align: center;
+    }
+  }
+  .h-title {
+    padding: 10px 20px;
+    h1 {
+      text-align: center;
+      font-family: "Montserrat-SemiBold", sans-serif;
+      font-weight: 600;
+      font-size: 2.4rem;
+    }
+  }
+}
+
+#hero {
+  height: 380px;
+  background: url(../../img/wallpaper.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: $bgSite;
+  position: relative;
+  .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  h2 {
+    font-family: "Montserrat-Bold", sans-serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    margin-bottom: 20px;
+  }
+  p {
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-weight: 600;
+    max-width: 460px;
+    line-height: 196.19%;
+  }
+}
+
+#detalhes {
+  margin: 50px auto 100px;
+  padding-top: 10px;
+  h2 {
+    text-align: center;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    font-weight: 600;
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+  }
+  p {
+    text-align: center;
+  }
+  .shoes {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    li {
+      cursor: pointer;
+      background: $bgCard;
+      width: 300px;
+      height: 300px;
+      border-radius: 5px;
+      margin: 5px 5px 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover img {
+        transform: scale(1.2);
+        transition: 1s all ease;
+      }
+
+      img {
+        max-width: 250px;
+      }
+    }
+  }
+}
+
+footer {
+  background: $black;
+  color: $bgSite;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 1.6rem;
+  }
+  #hero {
+    h2 {
+      font-size: 2.8rem;
+    }
+  }
+  #detalhes {
+    margin: 40px auto 40px;
+    h2 {
+      font-size: 2.8rem;
+    }
+    p {
+      text-align: center;
+    }
+    .shoes {
+      li {
+        flex: 1;
+        max-width: 370px;
+      }
+    }
+  }
+}
