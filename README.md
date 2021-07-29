@@ -2,7 +2,7 @@
 
 ## Sobre
 
-Desafios front-end -da comunidade [Condelândia](https://discord.com/invite/QevDJqCzaY) do discord.
+Desafios front-end da comunidade [Condelândia](https://discord.com/invite/QevDJqCzaY) do discord.
 
 ---
 
