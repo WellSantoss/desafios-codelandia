@@ -1,0 +1,111 @@
+@import "./variaveis";
+
+body {
+  font-family: "LexendDeca-Regular", sans-serif;
+  background-color: $background;
+  color: $text;
+}
+
+.container {
+  max-width: 940px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+header {
+  background: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+  padding: 40px 0;
+  margin-bottom: 100px;
+  .h-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+    h1,
+    h2 {
+      font-size: 2.4rem;
+      color: $white;
+      font-weight: 400;
+    }
+  }
+  .input {
+    position: relative;
+    img {
+      position: absolute;
+      width: 24px;
+      top: 17px;
+      left: 18px;
+    }
+    input {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+      font-size: 1.8rem;
+      padding: 18px 18px 18px 60px;
+      color: #ffffff;
+      opacity: 8;
+      outline: none;
+      transition: background 0.3s;
+      &:focus {
+        background: rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+}
+
+article {
+  margin-bottom: 50px;
+  padding: 20px 25px 25px;
+  background-color: $white;
+  box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+  border-radius: 5px;
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-weight: 400;
+    font-size: 2.6rem;
+    color: $title;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    margin-bottom: 50px;
+    .h-title {
+      margin-bottom: 40px;
+      h1,
+      h2 {
+        font-size: 1.8rem;
+      }
+    }
+    .input {
+      position: relative;
+      img {
+        position: absolute;
+        width: 20px;
+        top: 13px;
+        left: 12px;
+      }
+      input {
+        font-size: 1.6rem;
+        padding: 12px 12px 12px 44px;
+      }
+    }
+  }
+  article {
+    margin-bottom: 25px;
+    padding: 15px;
+    h1 {
+      font-size: 1.8rem;
+    }
+    p,
+    span {
+      font-size: 1.4rem;
+    }
+  }
+}

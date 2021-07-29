@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Desafio 1</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="h-title">
+          <h1>Codelândia</h1>
+          <h2>blog</h2>
+        </div>
+        <div class="input">
+          <img src="./img/search.svg" alt="Pesquisar" />
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="Pesquisar no blog"
+          />
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <article class="container-post">
+        <div>
+          <span class="date">02 de jul, 2021</span>
+          <a href="#">
+            <img src="./img/codicon_heart.svg" alt="Curtir" />
+          </a>
+        </div>
+        <a href="#"
+          ><h1 class="title">Agora é oficial: o Windows 11 está vindo</h1></a
+        >
+        <p class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus
+          vel diam fringilla, eu ullamcorper ex iaculis.
+        </p>
+      </article>
+      <article class="container-post">
+        <div>
+          <span class="date">02 de jul, 2021</span>
+          <a href="#">
+            <img src="./img/codicon_heart.svg" alt="Curtir" />
+          </a>
+        </div>
+        <a href="#"
+          ><h1 class="title">
+            Tim Berners-Lee vai leiloar código-fonte da web
+          </h1></a
+        >
+        <p class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus
+          vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor
+          justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar
+          tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum
+          ullamcorper libero.
+        </p>
+      </article>
+      <article class="container-post">
+        <div>
+          <span class="date">02 de jul, 2021</span>
+          <a href="#">
+            <img src="./img/codicon_heart.svg" alt="Curtir" />
+          </a>
+        </div>
+        <a href="#"
+          ><h1 class="title">
+            Tem Firefox novo no pedaço e você vai querer migrar
+          </h1></a
+        >
+        <p class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          vestibulum auctor est.
+        </p>
+      </article>
+      <article class="container-post">
+        <div>
+          <span class="date">02 de jul, 2021</span>
+          <a href="#">
+            <img src="./img/codicon_heart.svg" alt="Curtir" />
+          </a>
+        </div>
+        <a href="#"
+          ><h1 class="title">
+            John McAfee, criador do antivírus McAfee, morre
+          </h1></a
+        >
+        <p class="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          vestibulum auctor est. Nam vitae finibus ante. Duis lobortis tellus
+          vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor
+          justo. Vestibulum nisl orci, lacinia venenatis leo sit amet, pulvinar
+          tincidunt risus. Phasellus nisl dui, cursus a lectus et, interdum
+          ullamcorper libero.
+        </p>
+      </article>
+    </main>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      const sr = ScrollReveal({
+        origin: "top",
+        distance: "50px",
+        duration: 2000,
+        reset: false,
+      });
+
+      ScrollReveal().reveal(".container-post", { delay: 200 });
+      ScrollReveal().reveal(".date", { delay: 400 });
+      ScrollReveal().reveal(".title", { delay: 500 });
+      ScrollReveal().reveal(".description", { delay: 600 });
+    </script>
+  </body>
+</html>

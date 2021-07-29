@@ -13,19 +13,19 @@
 
 /* Fonts */
 @font-face {
-  src: url(../fontes/Lato-Regular.ttf);
+  src: url(../fonts/Lato-Regular.ttf);
   font-family: "Lato-Regular";
   font-weight: normal;
 }
 
 @font-face {
-  src: url(../fontes/Lato-Bold.ttf);
+  src: url(../fonts/Lato-Bold.ttf);
   font-family: "Lato-Bold";
   font-weight: bold;
 }
 
 @font-face {
-  src: url(../fontes/Merriweather-Regular.ttf);
+  src: url(../fonts/Merriweather-Regular.ttf);
   font-family: "Merriweather-Regular";
   font-weight: normal;
 }
