@@ -1,0 +1,61 @@
+/* Variáveis */
+$white: #ffffff;
+$blue: #0072d2;
+$black: #131318;
+
+/* Fonts */
+@font-face {
+  src: url(../../fonts/B612-Regular.ttf);
+  font-family: "B612-Regular";
+  font-weight: 400;
+}
+
+@font-face {
+  src: url(../../fonts/B612-Bold.ttf);
+  font-family: "B612-Bold";
+  font-weight: 700;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button,
+input {
+  border: 0;
+}
+button:focus,
+input:focus {
+  border: 0;
+}
