@@ -43,7 +43,7 @@ main {
     background: url("../../image/capa.png") no-repeat center center;
     background-size: cover;
     height: 267px;
-    width: 184px;
+    min-width: 184px;
     border-radius: 20px;
     margin-right: 70px;
   }
@@ -87,6 +87,7 @@ main {
 
   // Botões
   .buttons {
+    margin-bottom: 50px;
     button {
       padding: 15px 27px;
       text-transform: uppercase;
@@ -110,14 +111,31 @@ main {
 }
 
 // ****** RESPONSIVO
-@media screen and (max-width: 1200px) {
-}
-
-@media screen and (max-width: 991px) {
-}
-
 @media screen and (max-width: 767px) {
+  main {
+    margin: 60px auto 0 auto;
+    flex-direction: column;
+
+    // Capa
+    .img {
+      margin-right: 0px;
+      margin-bottom: 35px;
+    }
+
+    .content {
+      text-align: center;
+    }
+  }
 }
 
 @media screen and (max-width: 575px) {
+  main {
+    .infos {
+      flex-direction: column;
+
+      span {
+        margin: 20px 0;
+      }
+    }
+  }
 }
