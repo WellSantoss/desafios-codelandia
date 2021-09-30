@@ -1,0 +1,149 @@
+@import "./variaveis";
+
+body {
+  background: linear-gradient(130.02deg, $green 0.66%, $dark-green 83.32%);
+  color: $white;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  padding-top: 40px;
+  margin-bottom: 75px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 100px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    li {
+      margin-left: 30px;
+    }
+  }
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .content {
+    max-width: 445px;
+
+    h2 {
+      font-family: "Poppins-Bold";
+      font-weight: 700;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+    }
+
+    h1 {
+      font-family: "Poppins-Black";
+      font-weight: 900;
+      font-size: 6.8rem;
+      text-transform: uppercase;
+      line-height: 7rem;
+      margin: 15px 0 25px 0;
+    }
+
+    p {
+      font-family: "Poppins-Regular";
+      font-weight: 400;
+      margin-bottom: 45px;
+    }
+
+    a {
+      padding: 10px 30px;
+      font-family: "Poppins-Medium";
+      font-weight: 500;
+      color: $white;
+      text-transform: uppercase;
+      display: inline-block;
+      transform: skew(-25deg);
+
+      &.btn-primary {
+        background-color: $green;
+        margin-right: 15px;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 14px;
+          height: 18px;
+          background: url(../../image/play.svg) no-repeat;
+          margin-right: 10px;
+        }
+      }
+
+      &.btn-secondary {
+        border: 2px solid $green;
+        padding: 8px 30px;
+      }
+    }
+  }
+
+  .img {
+    max-width: 500px;
+    margin-left: 50px;
+  }
+}
+
+// ****** RESPONSIVO
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 991px) {
+  body {
+    height: auto;
+  }
+  main {
+    flex-direction: column-reverse;
+    .content {
+      max-width: 70%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  main {
+    .content {
+      padding-bottom: 20px;
+      max-width: 90%;
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      h1 {
+        font-size: 5.6rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  main {
+    .content {
+      a {
+        display: block;
+        max-width: 235px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+/* Variáveis */
+$white: #f9f9f9;
+$green: #658e76;
+$dark-green: #1a4855;
+
+/* Fonts */
+@font-face {
+  src: url(../../fonts/Poppins-Regular.ttf);
+  font-family: "Poppins-Regular";
+  font-weight: 400;
+}
+
+@font-face {
+  src: url(../../fonts/Poppins-Medium.ttf);
+  font-family: "Poppins-Medium";
+  font-weight: 500;
+}
+
+@font-face {
+  src: url(../../fonts/Poppins-SemiBold.ttf);
+  font-family: "Poppins-SemiBold";
+  font-weight: 600;
+}
+
+@font-face {
+  src: url(../../fonts/Poppins-Bold.ttf);
+  font-family: "Poppins-Bold";
+  font-weight: 700;
+}
+
+@font-face {
+  src: url(../../fonts/Poppins-Black.ttf);
+  font-family: "Poppins-Black";
+  font-weight: 900;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+button,
+input {
+  border: 0;
+}
+button:focus,
+input:focus {
+  border: 0;
+}
