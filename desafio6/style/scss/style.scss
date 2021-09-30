@@ -1,5 +1,114 @@
 @import "./variaveis";
 
+// Padrão
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../../image/fundo.jpg") no-repeat center center;
+  background-size: cover;
+  color: $white;
+  min-height: 100vh;
+  font-family: "B612", sans-serif;
+  font-weight: 400;
+}
+
+// Header
+header {
+  h1,
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "B612", sans-serif;
+    font-weight: 700;
+  }
+  h2 {
+    font-size: 2rem;
+    margin: 45px 0 35px 0;
+  }
+  h1 {
+    font-size: 9.6rem;
+  }
+}
+
+// Conteúdo
+main {
+  max-width: 1020px;
+  padding: 0 20px;
+  margin: 120px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // Capa
+  .img {
+    background: url("../../image/capa.png") no-repeat center center;
+    background-size: cover;
+    height: 267px;
+    width: 184px;
+    border-radius: 20px;
+    margin-right: 70px;
+  }
+
+  .content {
+    max-width: 722px;
+    font-size: 2rem;
+  }
+
+  .infos {
+    margin: 42px 0 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+  }
+
+  .time {
+    display: flex;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      background: url("../../image/clock.svg") no-repeat center center;
+      background-size: cover;
+      margin-right: 15px;
+    }
+  }
+
+  .stars {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin: 0 8px;
+      height: 31px;
+    }
+  }
+
+  // Botões
+  .buttons {
+    button {
+      padding: 15px 27px;
+      text-transform: uppercase;
+      color: $white;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      border-radius: 3px;
+      background: $blue;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      font-size: 1.6rem;
+
+      &.trailer {
+        background: $black;
+        border: 1px solid $white;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
 // ****** RESPONSIVO
 @media screen and (max-width: 1200px) {
 }
