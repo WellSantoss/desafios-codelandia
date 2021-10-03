@@ -20,3 +20,4 @@ Desafios front-end da comunidade [Condelândia](https://discord.com/invite/QevDJ
 - [Desafio 4](/desafio4)
 - [Desafio 5](/desafio5)
 - [Desafio 6](/desafio6)
+- [Desafio 7](/desafio7)
