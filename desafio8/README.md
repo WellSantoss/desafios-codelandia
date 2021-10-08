@@ -2,7 +2,7 @@
 
 ## Resultado
 
-![Resultado final](./design/result.png)
+![Resultado final](./image/result.png)
 
 [CLique aqui para ver o resultado final!](https://wellsantoss.github.io/desafios-codelandia/desafio8/index.html)
 
